@@ -9,6 +9,8 @@
 \onehalfspacing{}
 
 \usepackage[center]{titlesec}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\usepackage[justification=centering]{caption}
 
 \usepackage{indentfirst}
 \setlength{\parindent}{20pt}
@@ -25,7 +27,6 @@
 \hyphenpenalty=0
 
 \usepackage[acronym]{glossaries}
-\usepackage{multirow}
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{graphicx}
@@ -51,6 +52,10 @@ bibstyle=gost-numeric,
 sorting=none,
 ]{biblatex}
 \addbibresource{bibliography.bib}
+
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
 
 \begin{document}
 \include{titlepage}
