@@ -3,81 +3,124 @@
 
 \begin{table}[ht!]
     \centering
-    \begin{tabular}{ |c|c|c|c|c|c| }
-        \hline
-                    $hkl$ &  $2\theta_D, \ \degree$ &     $\varphi, \ \degree$ & $\omega, \ \degree$ &    $Y,\unit{пикс.}$ &    $X,\unit{пикс.}$ \\
-        \hline
-        $  \hkl(11 -1 3)$ & \multirow{10}{*}{-96.7} &  \multirow{2}{*}{-66.31} &                88.2 &              504.77 &              389.27 \\
-        $ \hkl(-11 1 -3)$ &                         &                          &               -91.8 &              503.78 &              389.53 \\
-        $   \hkl(5 9 -5)$ &                         &   \multirow{2}{*}{28.72} &                84.7 &              505.36 &              389.40 \\
-        $  \hkl(-5 -9 5)$ &                         &                          &               -95.3 &              503.24 &              389.41 \\
-        $  \hkl(5 -9 -5)$ &                         &  \multirow{2}{*}{119.20} &               -99.5 &              501.71 &              389.28 \\
-        $   \hkl(-5 9 5)$ &                         &                          &                80.5 &              506.90 &              389.58 \\
-        $   \hkl(3 1 11)$ &                         & \multirow{2}{*}{-138.01} &                97.4 &              505.92 &              389.33 \\
-        $\hkl(-3 -1 -11)$ &                         &                          &               -82.6 &              502.68 &              389.32 \\
-        $  \hkl(3 -1 11)$ &                         & \multirow{2}{*}{-143.63} &                84.6 &              505.92 &              389.35 \\
-        $ \hkl(-3 1 -11)$ &                         &                          &               -95.4 &              502.63 &              389.29 \\
-        \hline
-        $ \hkl(1 -3 -11)$ &  \multirow{10}{*}{96.7} &  \multirow{2}{*}{-59.35} &               -89.3 &              505.08 &              388.48 \\
-        $  \hkl(-1 3 11)$ &                         &                          &                90.7 &              504.09 &              388.18 \\
-        $   \hkl(9 -1 7)$ &                         &   \multirow{2}{*}{14.46} &                83.3 &              502.92 &              388.53 \\
-        $  \hkl(-9 1 -7)$ &                         &                          &               -96.7 &              506.04 &              388.01 \\
-        $   \hkl(9 5 -5)$ &                         &  \multirow{2}{*}{121.79} &                99.7 &              503.80 &              388.21 \\
-        $  \hkl(-9 -5 5)$ &                         &                          &               -80.3 &              505.05 &              388.27 \\
-        $  \hkl(-3 11 1)$ &                         & \multirow{2}{*}{-142.92} &                95.7 &              504.66 &              388.19 \\
-        $ \hkl(3 -11 -1)$ &                         &                          &               -84.4 &              504.08 &              388.26 \\
-        \hline
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_1,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
+    \hkl(11 -1 3)   & -96.7  & -66.31  & 88.2  & 504.77   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.27\\ 389.53\end{tabular}} & \multirow{2}{*}{389.40}           \\ \cline{1-5}
+    \hkl(-11 1 -3)  & -<<-    & -<<-     & -91.8 & 503.78   &                                                                                &                                   \\ \hline
+    \hkl(5 9 -5)    & -<<-    & 28.72   & 84.7  & 505.36   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.40\\ 389.41\end{tabular}} & \multirow{2}{*}{389.41}           \\ \cline{1-5}
+    \hkl(-5 -9 5)   & -<<-    & -<<-     & -95.3 & 503.24   &                                                                                &                                   \\ \hline
+    \hkl(5 -9 -5)   & -<<-    & 119.20  & -99.5 & 501.71   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.28\\ 389.58\end{tabular}} & \multirow{2}{*}{389.43}           \\ \cline{1-5}
+    \hkl(-5 9 5)    & -<<-    & -<<-     & 80.5  & 506.90   &                                                                                &                                   \\ \hline
+    \hkl(3 1 11)    & -<<-    & -138.01 & 97.4  & 505.92   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.33\\ 389.32\end{tabular}} & \multirow{2}{*}{389.33}           \\ \cline{1-5}
+    \hkl(-3 -1 -11) & -<<-    & -<<-     & -82.6 & 502.68   &                                                                                &                                   \\ \hline
+    \hkl(3 -1 11)   & -<<-    & -143.63 & 84.6  & 505.92   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.35\\ 389.29\end{tabular}} & \multirow{2}{*}{389.32}           \\ \cline{1-5}
+    \hkl(-3 1 -11)  & -<<-    & -<<-     & -95.4 & 502.63   &                                                                                &                                   \\ \hline
+    \hkl(1 -3 -11)  & 96.7   & -59.35  & -89.3 & 505.08   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}388.48\\ 388.18\end{tabular}} & \multirow{2}{*}{388.33}           \\ \cline{1-5}
+    \hkl(-1 3 11)   & -<<-    & -<<-     & 90.7  & 504.09   &                                                                                &                                   \\ \hline
+    \hkl(9 -1 7)    & -<<-    & 14.46   & 83.3  & 502.92   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}388.53\\ 388.01\end{tabular}} & \multirow{2}{*}{388.27}           \\ \cline{1-5}
+    \hkl(-9 1 -7)   & -<<-    & -<<-     & -96.7 & 506.04   &                                                                                &                                   \\ \hline
+    \hkl(9 5 -5)    & -<<-    & 121.79  & 99.7  & 503.80   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}388.21\\ 388.27\end{tabular}} & \multirow{2}{*}{388.24}           \\ \cline{1-5}
+    \hkl(-9 -5 5)   & -<<-    & -<<-     & -80.3 & 505.05   &                                                                                &                                   \\ \hline
+    \hkl(-3 11 1)   & -<<-    & -142.92 & 95.7  & 504.66   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}388.19\\ 388.26\end{tabular}} & \multirow{2}{*}{388.23}           \\ \cline{1-5}
+    \hkl(3 -11 -1)  & -<<-    & -<<-     & -84.4 & 504.08   &                                                                                &                                   \\ \hline
+    \hkl(-3 11 1)   & -<<-    & -142.92 & 95.7  & 504.66   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}388.19\\ 388.26\end{tabular}} & \multirow{2}{*}{388.23}           \\ \cline{1-5}
+    \hkl(3 -11 -1)  & -<<-    & -<<-     & -84.0 & 504.08   &                                                                                &                                   \\ \hline
     \end{tabular}
-    \caption{Положения пиков $K\alpha_1$ для эталона Si для $D = 128.5\unit{мм}$}%
+    \caption{Условия съемки и результаты обработки данных Si}%
     \label{tab:Si}
 \end{table}
 
 \begin{table}[ht!]
     \centering
-    \begin{tabular}{ |c|c|c|c|c| }
-        \hline
-                   $hkl$ &  $2\theta_D, \ \degree$ & $\omega, \ \degree$ &    $Y,\unit{пикс.}$ &    $X,\unit{пикс.}$ \\
-        \hline
-        $ \hkl(-6 0 10)$ &  \multirow{6}{*}{-93.9} &              -112.4 &              503.91 &              388.61 \\
-        $ \hkl(6 0 -10)$ &                         &                67.6 &              504.56 &              388.47 \\
-        $ \hkl(-10 0 6)$ &                         &               -84.3 &              502.83 &              388.50 \\
-        $ \hkl(10 0 -6)$ &                         &                95.7 &              505.40 &              388.62 \\
-        $  \hkl(6 0 10)$ &                         &              -174.3 &              506.26 &              388.64 \\
-        $  \hkl(10 0 6)$ &                         &               157.6 &              506.70 &              388.74 \\
-        \hline
-        $\hkl(-10 0 -6)$ &  \multirow{6}{*}{93.9}  &              -108.5 &              502.39 &              386.91 \\
-        $  \hkl(10 0 6)$ &                         &                71.5 &              506.70 &              387.32 \\
-        $\hkl(-6 0 -10)$ &                         &               -80.4 &              502.92 &              386.82 \\
-        $  \hkl(6 0 10)$ &                         &                99.6 &              506.46 &              387.29 \\
-        $ \hkl(10 0 -6)$ &                         &                 9.7 &              505.43 &              387.21 \\
-        $ \hkl(6 0 -10)$ &                         &               -18.4 &              504.69 &              387.11 \\
-        \hline
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_1,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
+    \hkl(-6 0 10)  & -93.9  & -179.06 & -112.4 & 503.91   & 388.61                                                              & \multirow{2}{*}{388.54}           \\ \cline{1-6}
+    \hkl(6 0 -10)  & -<<-    & -<<-     & 67.6   & 504.56   & 388.47                                                              &                                   \\ \hline
+    \hkl(-10 0 6)  & -<<-    & -<<-     & -84.3  & 502.83   & 388.50                                                              & \multirow{2}{*}{388.56}           \\ \cline{1-6}
+    \hkl(10 0 -6)  & -<<-    & -<<-     & 95.7   & 505.40   & 388.62                                                              &                                   \\ \hline
+    \hkl(6 0 10)   & -<<-    & -<<-     & -174.3 & 506.26   & 388.64                                                              & -                                 \\ \hline
+    \hkl(10 0 6)   & -<<-    & -<<-     & 157.6  & 506.70   & 388.74                                                              & -                                 \\ \hline
+    \hkl(-10 0 -6) & 93.9   & -<<-     & -108.5 & 502.39   & 386.91                                                              & \multirow{2}{*}{387.12}           \\ \cline{1-6}
+    \hkl(10 0 6)   & -<<-    & -<<-     & 71.5   & 506.70   & 387.32                                                              &                                   \\ \hline
+    \hkl(-6 0 -10) & -<<-    & -<<-     & -80.4  & 502.92   & 386.82                                                              & \multirow{2}{*}{387.05}           \\ \cline{1-6}
+    \hkl(6 0 10)   & -<<-    & -<<-     & 99.6   & 506.46   & 387.29                                                              &                                   \\ \hline
+    \hkl(10 0 -6)  & -<<-    & -<<-     & 9.7    & 505.43   & 387.21                                                              & -                                 \\ \hline
+    \hkl(6 0 -10)  & -<<-    & -<<-     & -18.4  & 504.69   & 387.11                                                              & -                                 \\ \hline
     \end{tabular}
-    \caption{Положения пиков $K\alpha_1$ для эталона Ge для $D = 128.5\unit{мм}$ и $\varphi = -179.06\degree$}%
+    \caption{Условия съемки и результаты обработки данных Ge}%
     \label{tab:Ge}
 \end{table}
 
 \begin{table}[ht!]
     \centering
-    \begin{tabular}{ |c|c|c|c|c| }
-        \hline
-                       Фаза & $2\theta, \ \degree$ &        $hkl$ & Фактор повторяемости & Число ориентаций \\
-        \hline
-        \multirow{6}{*}{Ge} &               95.301 & \hkl(11 3 3) &                   24 &               48 \\
-                            &               95.301 &  \hkl(9 7 3) &                   48 &               96 \\
-                            &               97.566 & \hkl(12 0 0) &                    6 &               12 \\
-                            &               97.566 &  \hkl(8 8 4) &                   24 &               48 \\
-                            &               98.931 & \hkl(11 5 1) &                   48 &               96 \\
-                            &               98.931 &  \hkl(7 7 7) &                    8 &               16 \\
-        \hline
-        \multirow{6}{*}{Si} &               95.263 &  \hkl(8 8 0) &                   12 &               24 \\
-                            &               96.737 & \hkl(11 3 1) &                   48 &               96 \\
-                            &               96.737 &  \hkl(9 7 1) &                   48 &               96 \\
-                            &               96.737 &  \hkl(9 5 5) &                   24 &               48 \\
-                            &               99.204 & \hkl(10 6 0) &                   24 &               48 \\
-                            &               99.204 &  \hkl(8 6 6) &                   24 &               48 \\
-        \hline
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+                        Эталон & $2\theta, \ \degree$ &        $hkl$ & Фактор повторяемости & Число ориентаций \\ \hline
+    \multirow{6}{*}{Ge} & 95.301 & \hkl(11 3 3) & 24                   & 48               \\ \cline{2-5} 
+                        & 95.301 & \hkl(9 7 3)  & 48                   & 96               \\ \cline{2-5} 
+                        & 97.566 & \hkl(12 0 0) & 6                    & 12               \\ \cline{2-5} 
+                        & 97.566 & \hkl(8 8 4)  & 24                   & 48               \\ \cline{2-5} 
+                        & 98.931 & \hkl(11 5 1) & 48                   & 96               \\ \cline{2-5} 
+                        & 98.931 & \hkl(7 7 7)  & 8                    & 16               \\ \hline
+    \multirow{6}{*}{Si} & 95.263 & \hkl(8 8 0)  & 12                   & 24               \\ \cline{2-5} 
+                        & 96.737 & \hkl(11 3 1) & 48                   & 96               \\ \cline{2-5} 
+                        & 96.737 & \hkl(9 7 1)  & 48                   & 96               \\ \cline{2-5} 
+                        & 96.737 & \hkl(9 5 5)  & 24                   & 48               \\ \cline{2-5} 
+                        & 99.204 & \hkl(10 6 0) & 24                   & 48               \\ \cline{2-5} 
+                        & 99.204 & \hkl(8 6 6)  & 24                   & 48               \\ \hline
     \end{tabular}
     \caption{Характеристики дифракционных рефлексов эталонных монокристаллов}%
     \label{tab:reflex_props}
+\end{table}
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Эталон              & $hkl$          & \begin{tabular}[c]{@{}l@{}}$D,\unit{мм}$\\ $2\theta_D, \ \degree$\end{tabular}   & \begin{tabular}[c]{@{}l@{}}$\Delta X,\unit{пикс.}$\\ $FWHM, \ \degree$\end{tabular} & \begin{tabular}[c]{@{}l@{}}$2\theta_\text{эксп}, \ \degree$\\ $\Delta 2\theta, \ \degree$\end{tabular} & \begin{tabular}[c]{@{}l@{}}$a_\text{эксп},\unit{\AA}$\\ $\Delta a,\unit{\AA}$\end{tabular} \\ \hline
+    \multirow{16}{*}{Ge} & \hkl(5 -11 -1) & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.96\\ 0.246\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.927\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580(7)\\ 0.0003\end{tabular} \\ \cline{2-6} 
+                        & \hkl(1 -11 -5) & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.97\\ 0.251\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.927\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580\\ 0.0004\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(7 -7 -7)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-34.74\\ 0.244\end{tabular}      & \begin{tabular}[c]{@{}l@{}}98.925\\ -0.006\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580\\ 0.0003\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(7 -7 -7)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.89\\ 0.256\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.930\\ -0.001\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6578\\ 0.0001\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(3 -3 11)  & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.10\\ 0.253\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.297\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6579\\ 0.0002\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(-3 3 -11) & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.01\\ 0.262\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.300\\ -0.001\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6579\\ 0.0002\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(9 -7 3)   & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.19\\ 0.258\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.294\\ -0.007\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6581\\ 0.0003\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(-9 7 -3)  & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.25\\ 0.252\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.293\\ -0.008\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6581\\ 0.0003\end{tabular}    \\ \hline
+    \multirow{12}{*}{Si} & \hkl(8 6 6)    & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.00\\ 0.248\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.200\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4311\\ 0.0002\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(10 -6 0)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.06\\ 0.255\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.202\\ -0.002\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4310\\ 0.0001\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(0 6 -10)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.09\\ 0.253\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.202\\ -0.002\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4310\\ 0.0001\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(9 -7 1)   & \begin{tabular}[c]{@{}l@{}}129.5\\ ±96.7\end{tabular}    & \begin{tabular}[c]{@{}l@{}}1.03\\ 0.256\end{tabular}        & \begin{tabular}[c]{@{}l@{}}96.731\\ -0.006\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4312\\ 0.0003\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(9 -7 -1)  & \begin{tabular}[c]{@{}l@{}}129.5\\ ±97.5\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-25.37\\ 0.274\end{tabular}      & \begin{tabular}[c]{@{}l@{}}96.735\\ -0.002\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4310\\ 0.0001\end{tabular}    \\ \cline{2-6} 
+                        & \hkl(-9 7 1)   & \begin{tabular}[c]{@{}l@{}}129.5\\ ±97.5\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-25.41\\ 0.300\end{tabular}      & \begin{tabular}[c]{@{}l@{}}96.736\\ -0.001\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4309\\ 0.0000\end{tabular}    \\ \hline
+    \end{tabular}
+    \caption{Условия съемки и результаты определения ПЭЯ эталонных монокристаллов}%
+    \label{tab:measured}
+\end{table}
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Образец & $a,\unit{\AA}$ & $x$ & Метод         & Источник             \\ \hline
+    $\text{Y}_2\text{O}_3$  & 10.6035(8) & 1         & Фотометод     & \cite{Paton:1965}    \\ \hline
+    $\text{Y}_2\text{O}_3$  & 10.6049(2) & 1         & РСтА          & \cite{Nikolaev:2023} \\ \hline
+    $A$     & 10.6177(2) & 0.03      & -<<-          & -<<-                 \\ \hline
+    $B$     & 10.6391(2) & 0.11      & -<<-          & -<<-                 \\ \hline
+    $C$    & 10.6878(2) & 0.31      & -<<-          & -<<-                 \\ \hline
+    №1    & 10.7025(1) & 0.305(11) & РСтА          &  Наст. работа        \\ \hline
+    №3    & 10.7049(1) & 0.378(13) & -<<-          & -<<-                 \\ \hline
+    №4    & 10.6942(2) & 0.270(10) & -<<-          & -<<-                 \\ \hline
+    №5    & 10.6918(1) & 0.277(10) & -<<-          & -<<-                 \\ \hline
+    №6    & 10.6901(2) & 0.249(9)  & -<<-          & -<<-                 \\ \hline
+    №1    & 10.7001(7) & 0.38      & Бонд          & Наст. работа         \\ \hline
+    №2    & 10.6902(7) & 0.34      & -<<-          & -<<-                 \\ \hline
+    №3    & 10.7045(7) & 0.40      & -<<-          & -<<-                 \\ \hline
+    №4    & 10.6913(7) & 0.35      & -<<-          & -<<-                 \\ \hline
+    №5    & 10.6912(7) & 0.35      & -<<-          & -<<-                 \\ \hline
+    $\text{Eu}_2\text{O}_3$ & 10.8683(2) & 0         & Поликристалл  & \cite{Morris:1984}   \\ \hline
+    \end{tabular}
+    \caption{Значения ПЭЯ \YEu{}}%
+    \label{tab:YEu}
 \end{table}
