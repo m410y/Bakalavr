@@ -1,9 +1,28 @@
-\documentclass[a4paper,14pt]{extarticle}
+\documentclass[
+    a4paper,
+    14pt
+]{extarticle}
 
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
-\usepackage[left=3cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{FreeSerif}
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
+
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguages{english,greek}
+
+% \newfontfamily{\cyrillicfont}{Times New Roman}
+% \newfontfamily{\cyrillicfontrm}{Times New Roman}
+% \newfontfamily{\cyrillicfonttt}{Courier New}
+% \newfontfamily{\cyrillicfontsf}{Arial}
+
+\usepackage[
+    left=30mm,
+    right=15mm,
+    top=20mm,
+    bottom=20mm
+]{geometry}
 
 \usepackage{setspace}
 \onehalfspacing{}
@@ -24,9 +43,6 @@
 
 \usepackage[normalem]{ulem}
 
-\hyphenpenalty=0
-
-\usepackage[acronym]{glossaries}
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{graphicx}
@@ -34,24 +50,12 @@
 \usepackage{pdfpages}
 \usepackage{subcaption}
 
-\usepackage{miller}
-\newcommand{\unit}[1]{ \ \text{#1}}
-\newcommand{\degree}{^\circ}
-\newcommand{\celcius}{^\circ \text{C}}
-\newcommand{\YEu}{${(\text{Y}_{1-x}\text{Eu}_x)}_2\text{O}_3$}
-\newcommand{\range}[2]{[#1\div#2]}
-
-\usepackage{forloop}
-\newcounter{x}
-\newcommand{\Repeat}[2]{\forloop{x}{0}{\value{x} < #1}{#2}}
-\newcommand{\writedate}{<<\Repeat{2}{\ldots}>>\Repeat{5}{\ldots}2025г.}
-
-\usepackage{csquotes}
-\bibliographystyle{gost-numeric.bbx}
-\usepackage[backend=biber,
-citestyle=gost-numeric,
-bibstyle=gost-numeric,
-sorting=none,
+% \usepackage{csquotes}
+% \bibliographystyle{gost-numeric.bbx}
+\usepackage[
+    % citestyle=gost-numeric,
+    % bibstyle=gost-numeric,
+    sorting=none
 ]{biblatex}
 \addbibresource{bibliography.bib}
 
@@ -60,14 +64,29 @@ sorting=none,
 \usepackage{amsmath}
 \usepackage{tensor}
 
+\usepackage{miller}
+\newcommand{\unit}[1]{ \ \text{#1}}
+\newcommand{\degree}{^\circ}
+\newcommand{\celcius}{^\circ\text{C}}
+\newcommand{\YEu}{${(\text{Y}_{1-x}\text{Eu}_x)}_2\text{O}_3$}
+\newcommand{\range}[2]{#1\div#2}
+
+\usepackage{xparse}
+\ExplSyntaxOn%
+\NewDocumentCommand\alotofdots{ D (){\ldotp} O{3}}
+{\mathinner{\prg_replicate:nn{#2}{#1}}}
+\ExplSyntaxOff%
+\newcommand{\writesign}{$\alotofdots[14]$}
+\newcommand{\writedate}{«$\alotofdots[6]$»$\alotofdots[18]$2025г.}
+
 \begin{document}
 \include{titlepage}
 \tableofcontents
 \include{introduction}
-\include{experiment}
-\include{standrards}
-\include{realcryst}
-\include{results}
+% \include{experiment}
+% \include{standrards}
+% \include{realcryst}
+% \include{results}
 \printbibliography{}
-\include{appendix}
+% \include{appendix}
 \end{document}
