@@ -1,11 +1,13 @@
 % chktex-file 44
 \section*{Приложение}
 
+\renewcommand{\arraystretch}{1.2}
+
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_1,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
+    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_2,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
     \hkl(11 -1 3)   & -96.7  & -66.31  & 88.2  & 504.77   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.27\\ 389.53\end{tabular}} & \multirow{2}{*}{389.40}           \\ \cline{1-5}
     \hkl(-11 1 -3)  & -<<-    & -<<-     & -91.8 & 503.78   &                                                                                &                                   \\ \hline
     \hkl(5 9 -5)    & -<<-    & 28.72   & 84.7  & 505.36   & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}389.40\\ 389.41\end{tabular}} & \multirow{2}{*}{389.41}           \\ \cline{1-5}
@@ -35,19 +37,19 @@
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
-    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_1,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
+    $hkl$       & $2\theta_D, \ \degree$ & $\varphi, \ \degree$ & $\omega, \ \degree$ & $Y,\unit{пикс.}$ & \begin{tabular}[c]{@{}c@{}}$X_1,\unit{пикс.}$\\ $X_2,\unit{пикс.}$\end{tabular}            & $\left<X\right>,\unit{пикс.}$ \\ \hline
     \hkl(-6 0 10)  & -93.9  & -179.06 & -112.4 & 503.91   & 388.61                                                              & \multirow{2}{*}{388.54}           \\ \cline{1-6}
     \hkl(6 0 -10)  & -<<-    & -<<-     & 67.6   & 504.56   & 388.47                                                              &                                   \\ \hline
     \hkl(-10 0 6)  & -<<-    & -<<-     & -84.3  & 502.83   & 388.50                                                              & \multirow{2}{*}{388.56}           \\ \cline{1-6}
     \hkl(10 0 -6)  & -<<-    & -<<-     & 95.7   & 505.40   & 388.62                                                              &                                   \\ \hline
-    \hkl(6 0 10)   & -<<-    & -<<-     & -174.3 & 506.26   & 388.64                                                              & -                                 \\ \hline
-    \hkl(10 0 6)   & -<<-    & -<<-     & 157.6  & 506.70   & 388.74                                                              & -                                 \\ \hline
+    \hkl(6 0 10)   & -<<-    & -<<-     & -174.3 & 506.26   & 388.64                                                              & ---                                 \\ \hline
+    \hkl(10 0 6)   & -<<-    & -<<-     & 157.6  & 506.70   & 388.74                                                              & ---                                 \\ \hline
     \hkl(-10 0 -6) & 93.9   & -<<-     & -108.5 & 502.39   & 386.91                                                              & \multirow{2}{*}{387.12}           \\ \cline{1-6}
     \hkl(10 0 6)   & -<<-    & -<<-     & 71.5   & 506.70   & 387.32                                                              &                                   \\ \hline
     \hkl(-6 0 -10) & -<<-    & -<<-     & -80.4  & 502.92   & 386.82                                                              & \multirow{2}{*}{387.05}           \\ \cline{1-6}
     \hkl(6 0 10)   & -<<-    & -<<-     & 99.6   & 506.46   & 387.29                                                              &                                   \\ \hline
-    \hkl(10 0 -6)  & -<<-    & -<<-     & 9.7    & 505.43   & 387.21                                                              & -                                 \\ \hline
-    \hkl(6 0 -10)  & -<<-    & -<<-     & -18.4  & 504.69   & 387.11                                                              & -                                 \\ \hline
+    \hkl(10 0 -6)  & -<<-    & -<<-     & 9.7    & 505.43   & 387.21                                                              & ---                                 \\ \hline
+    \hkl(6 0 -10)  & -<<-    & -<<-     & -18.4  & 504.69   & 387.11                                                              & ---                                 \\ \hline
     \end{tabular}
     \caption{Условия съемки и результаты обработки данных Ge}%
     \label{tab:Ge}
@@ -80,7 +82,7 @@
     \begin{tabular}{|c|c|c|c|c|c|}
     \hline
     Эталон              & $hkl$          & \begin{tabular}[c]{@{}l@{}}$D,\unit{мм}$\\ $2\theta_D, \ \degree$\end{tabular}   & \begin{tabular}[c]{@{}l@{}}$\Delta X,\unit{пикс.}$\\ $FWHM, \ \degree$\end{tabular} & \begin{tabular}[c]{@{}l@{}}$2\theta_\text{эксп}, \ \degree$\\ $\Delta 2\theta, \ \degree$\end{tabular} & \begin{tabular}[c]{@{}l@{}}$a_\text{эксп},\unit{\AA}$\\ $\Delta a,\unit{\AA}$\end{tabular} \\ \hline
-    \multirow{16}{*}{Ge} & \hkl(5 -11 -1) & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular} & \begin{tabular}[c]{@{}l@{}}0.96\\ 0.246\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.927\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580(7)\\ 0.0003\end{tabular} \\ \cline{2-6} 
+    \multirow{16}{*}{Ge}& \hkl(5 -11 -1) & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.96\\ 0.246\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.927\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580\\ 0.0003\end{tabular} \\ \cline{2-6} 
                         & \hkl(1 -11 -5) & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.97\\ 0.251\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.927\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580\\ 0.0004\end{tabular}    \\ \cline{2-6} 
                         & \hkl(7 -7 -7)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±98.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-34.74\\ 0.244\end{tabular}      & \begin{tabular}[c]{@{}l@{}}98.925\\ -0.006\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6580\\ 0.0003\end{tabular}    \\ \cline{2-6} 
                         & \hkl(7 -7 -7)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.9\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.89\\ 0.256\end{tabular}        & \begin{tabular}[c]{@{}l@{}}98.930\\ -0.001\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6578\\ 0.0001\end{tabular}    \\ \cline{2-6} 
@@ -88,7 +90,7 @@
                         & \hkl(-3 3 -11) & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.01\\ 0.262\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.300\\ -0.001\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6579\\ 0.0002\end{tabular}    \\ \cline{2-6} 
                         & \hkl(9 -7 3)   & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.19\\ 0.258\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.294\\ -0.007\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6581\\ 0.0003\end{tabular}    \\ \cline{2-6} 
                         & \hkl(-9 7 -3)  & \begin{tabular}[c]{@{}l@{}}128.5\\ ±95.3\end{tabular}    & \begin{tabular}[c]{@{}l@{}}-0.25\\ 0.252\end{tabular}       & \begin{tabular}[c]{@{}l@{}}95.293\\ -0.008\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.6581\\ 0.0003\end{tabular}    \\ \hline
-    \multirow{12}{*}{Si} & \hkl(8 6 6)    & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.00\\ 0.248\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.200\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4311\\ 0.0002\end{tabular}    \\ \cline{2-6} 
+    \multirow{12}{*}{Si}& \hkl(8 6 6)    & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.00\\ 0.248\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.200\\ -0.004\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4311\\ 0.0002\end{tabular}    \\ \cline{2-6} 
                         & \hkl(10 -6 0)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.06\\ 0.255\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.202\\ -0.002\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4310\\ 0.0001\end{tabular}    \\ \cline{2-6} 
                         & \hkl(0 6 -10)  & \begin{tabular}[c]{@{}l@{}}138.6\\ ±99.2\end{tabular}    & \begin{tabular}[c]{@{}l@{}}0.09\\ 0.253\end{tabular}        & \begin{tabular}[c]{@{}l@{}}99.202\\ -0.002\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4310\\ 0.0001\end{tabular}    \\ \cline{2-6} 
                         & \hkl(9 -7 1)   & \begin{tabular}[c]{@{}l@{}}129.5\\ ±96.7\end{tabular}    & \begin{tabular}[c]{@{}l@{}}1.03\\ 0.256\end{tabular}        & \begin{tabular}[c]{@{}l@{}}96.731\\ -0.006\end{tabular}     & \begin{tabular}[c]{@{}l@{}}5.4312\\ 0.0003\end{tabular}    \\ \cline{2-6} 
