@@ -1,15 +1,19 @@
 \documentclass[a4paper,14pt]{extarticle}
 
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+%%% Решение проблемы копирования текста в буфер кракозябрами
+\usepackage{cmap}   % Улучшенный поиск русских слов в полученном pdf-файле
+\usepackage{textcomp}
+\usepackage[T1,T2A]{fontenc}                    % Поддержка русских букв
+% \usepackage{pscyr}  % Подключение pscyr
+\usepackage[utf8]{inputenc}         % Кодировка utf8
+\usepackage[english, russian]{babel} % Языки: русский, английский
+
 \usepackage[left=3cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
 
 \usepackage{setspace}
 \onehalfspacing{}
 
 \usepackage[center]{titlesec}
-\addtocontents{toc}{\protect\thispagestyle{empty}}
 \usepackage[justification=centering,font=small]{caption}
 
 \usepackage{indentfirst}
@@ -26,7 +30,6 @@
 
 \hyphenpenalty=0
 
-\usepackage[acronym]{glossaries}
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{graphicx}
@@ -62,6 +65,7 @@ sorting=none,
 
 \begin{document}
 \include{titlepage}
+\setcounter{page}{2}
 \tableofcontents
 \include{introduction}
 \include{experiment}
