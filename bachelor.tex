@@ -42,12 +42,16 @@
 \newcommand{\degree}{^\circ}
 \newcommand{\celcius}{^\circ \text{C}}
 \newcommand{\YEu}{${(\text{Y}_{1-x}\text{Eu}_x)}_2\text{O}_3$}
-\newcommand{\range}[2]{[#1\div#2]}
 
-\usepackage{forloop}
-\newcounter{x}
-\newcommand{\Repeat}[2]{\forloop{x}{0}{\value{x} < #1}{#2}}
-\newcommand{\writedate}{<<\Repeat{2}{\ldots}>>\Repeat{5}{\ldots}2025г.}
+\newcommand{\range}[2]{#1\div#2}
+
+\usepackage{xparse}
+\ExplSyntaxOn%
+\NewDocumentCommand\alotofdots{ D (){\ldotp} O{3}}
+{\mathinner{\prg_replicate:nn{#2}{#1}}}
+\ExplSyntaxOff%
+\newcommand{\writesign}{$\alotofdots[14]$}
+\newcommand{\writedate}{«$\alotofdots[6]$»$\alotofdots[18]$2025г.}
 
 \usepackage{csquotes}
 \bibliographystyle{gost-numeric.bbx}
@@ -72,6 +76,9 @@ sorting=none,
 \include{standrards}
 \include{realcryst}
 \include{results}
+
+Автор благодарит Российский научный фонд и Правительство Новосибирской области (проект № 24-22-20017, https://rscf.ru/project/24-22-20017/), а также программу Приоритет-2030 за финансовую поддержку исследования.
+
 \printbibliography{}
 \include{appendix}
 \end{document}
